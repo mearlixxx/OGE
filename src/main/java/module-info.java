@@ -1,7 +1,7 @@
 module com.example.oge {
     requires javafx.controls;
     requires javafx.fxml;
-    requires jakarta.mail;
+
     requires java.sql;
 
 
