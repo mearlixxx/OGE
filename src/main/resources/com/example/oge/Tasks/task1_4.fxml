@@ -8,15 +8,15 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #f50029;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oge.Tasks.Task1_4">
    <children>
-      <ImageView fx:id="usl_IV" fitHeight="600.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" />
-      <TextField layoutX="504.0" layoutY="452.0" prefHeight="15.0" prefWidth="149.0" />
-      <TextField layoutX="504.0" layoutY="344.0" />
-      <TextField layoutX="504.0" layoutY="241.0" />
+      <ImageView fx:id="usl_IV" fitHeight="600.0" fitWidth="476.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField layoutX="504.0" layoutY="490.0" prefHeight="15.0" prefWidth="149.0" />
+      <TextField layoutX="504.0" layoutY="369.0" />
+      <TextField layoutX="504.0" layoutY="247.0" />
       <TextField layoutX="504.0" layoutY="130.0" />
       <ImageView fx:id="zad_1_IV" fitHeight="106.0" fitWidth="380.0" layoutX="500.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="zad_4_IV" fitHeight="60.0" fitWidth="380.0" layoutX="504.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="zad_3_IV" fitHeight="60.0" fitWidth="380.0" layoutX="500.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="zad_2_IV" fitHeight="60.0" fitWidth="380.0" layoutX="503.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="zad_4_IV" fitHeight="77.0" fitWidth="380.0" layoutX="504.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="zad_3_IV" fitHeight="77.0" fitWidth="380.0" layoutX="500.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="zad_2_IV" fitHeight="84.0" fitWidth="380.0" layoutX="503.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true" />
       <Button fx:id="nextBtn" layoutX="762.0" layoutY="538.0" mnemonicParsing="false" style="-fx-background-color: #c51d34;" text="Дальше" textFill="WHITE">
          <font>
             <Font name="Arial" size="19.0" />

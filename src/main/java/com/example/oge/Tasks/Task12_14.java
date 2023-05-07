@@ -1,4 +1,49 @@
 package com.example.oge.Tasks;
 
-public class Task12_14 {
+import com.example.oge.VariantMaker;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+import java.net.URL;
+import java.util.Objects;
+import java.util.ResourceBundle;
+
+public class Task12_14 extends VariantMaker implements Initializable {
+
+    @FXML
+    ImageView zad_12_IV, zad_13_IV, zad_14_IV;
+
+    @FXML
+    Button nextBtn;
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        Image zad_12_img = new Image(getClass().getResourceAsStream("/com/example/oge/Excersises/Ex12_14/" + Zad_12));
+        zad_12_IV.setImage(zad_12_img);
+
+        Image zad_13_img = new Image(getClass().getResourceAsStream("/com/example/oge/Excersises/Ex12_14/" + Zad_13));
+        zad_13_IV.setImage(zad_13_img);
+
+        Image zad_14_img = new Image(getClass().getResourceAsStream("/com/example/oge/Excersises/Ex12_14/" + Zad_14));
+        zad_14_IV.setImage(zad_14_img);
+
+        nextBtn.setOnAction(event -> {
+            Stage stage = (Stage) nextBtn.getScene().getWindow();
+            stage.setResizable(false);
+            Parent root = null;
+            try {
+                root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/oge/Tasks/task15_18.fxml")));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            stage.setScene(new Scene(root, 900, 600));
+        });
+    }
 }
