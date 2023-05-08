@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.oge.Tasks.Task23_25"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #f50029;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oge.Tasks.Task23_25">
+   <children>
+      <ImageView fx:id="zad_23_IV" fitHeight="442.0" fitWidth="430.0" layoutX="8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="zad_25_IV" fitHeight="442.0" fitWidth="430.0" layoutX="456.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="nextBtn" layoutX="739.0" layoutY="552.0" mnemonicParsing="false" style="-fx-background-color: #c51d34;" text="Завершить" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Button>
+      <TextField layoutX="597.0" layoutY="463.0" />
+      <TextField layoutX="149.0" layoutY="463.0" />
+   </children>
 </AnchorPane>

@@ -46,6 +46,9 @@ public class VariantMaker {
     public static String Zad_25 =  "zad_25_";
     public static String Usl =  "usl_";
 
+    public static String[][][] answers = new String[4][22][22];
+
+
     @FXML
     Button var1Btn, var2Btn, var3Btn, var4Btn, var5Btn;
 
