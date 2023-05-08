@@ -24,7 +24,7 @@ public class MainMenu {
         formulas.setResizable(false);
         Parent rootprofile = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("formulas.fxml")));
         formulas.setTitle("Формулы");
-        formulas.setScene(new Scene(rootprofile, 600, 400));
+        formulas.setScene(new Scene(rootprofile, 900, 600));
     }
     @FXML
     public void setTrainingBtn() throws IOException {
@@ -40,7 +40,7 @@ public class MainMenu {
         instr.setResizable(false);
         Parent rootprofile = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("instructions.fxml")));
         instr.setTitle("Инструкции");
-        instr.setScene(new Scene(rootprofile, 600, 400));
+        instr.setScene(new Scene(rootprofile, 900, 600));
     }
     @FXML
     public void setReshVarBtn()  throws IOException {

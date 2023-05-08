@@ -4,38 +4,31 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFDEAD;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oge.Instructions">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #f50029;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oge.Instructions">
    <children>
-      <Label layoutX="143.0" layoutY="-8.0" text="Инструкции к выполнению">
+      <Label layoutX="241.0" layoutY="14.0" text="Инструкции к выполнению" textFill="WHITE">
          <font>
-            <Font name="Mistral" size="34.0" />
+            <Font name="Arial" size="34.0" />
          </font>
       </Label>
-      <ImageView fitHeight="343.0" fitWidth="331.0" layoutX="14.0" layoutY="57.0">
-         <image>
-            <Image url="@../../../Formulas/instruction.png" />
-         </image>
+      <ImageView fx:id="inst_1_IV" fitHeight="526.0" fitWidth="418.0" layoutX="14.0" layoutY="57.0">
       </ImageView>
-      <Button fx:id="backBtn1" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #00b300;" text="&lt;-">
-         <font>
-            <Font name="Arial Black" size="12.0" />
-         </font>
-      </Button>
-      <ImageView fitHeight="228.0" fitWidth="253.0" layoutX="348.0" layoutY="57.0">
-         <image>
-            <Image url="@../../../Formulas/instruction2.png" />
-         </image>
+      <ImageView fx:id="inst_2_IV" fitHeight="412.0" fitWidth="437.0" layoutX="450.0" layoutY="59.0">
       </ImageView>
-      <TextField editable="false" layoutX="353.0" layoutY="342.0" prefHeight="44.0" prefWidth="244.0" promptText="±, ∞, √" text="±, ∞, √">
+      <TextField editable="false" layoutX="642.0" layoutY="535.0" prefHeight="44.0" prefWidth="244.0" promptText="±, ∞, √" text="±, ∞, √">
          <font>
             <Font size="26.0" />
          </font>
       </TextField>
-      <TextArea layoutX="353.0" editable="false" layoutY="292.0" prefHeight="44.0" prefWidth="244.0" promptText="ПРОСЬБА СКОПИРОВАТЬ СИМВОЛЫ ЗАРАНЕЕ, В ПРОЦЕССЕ РЕШЕНИЯ ЭТОГО СДЕЛАТЬ БУДЕТ НЕВОЗМОЖНО" text="ПРОСЬБА СКОПИРОВАТЬ СИМВОЛЫ ЗАРАНЕЕ, В ПРОЦЕССЕ РЕШЕНИЯ ЭТОГО СДЕЛАТЬ БУДЕТ НЕВОЗМОЖНО" />
+      <TextArea editable="false" layoutX="482.0" layoutY="479.0" prefHeight="46.0" prefWidth="404.0" promptText="ПРОСЬБА СКОПИРОВАТЬ СИМВОЛЫ ЗАРАНЕЕ, В ПРОЦЕССЕ РЕШЕНИЯ ЭТОГО СДЕЛАТЬ БУДЕТ НЕВОЗМОЖНО" text="ПРОСЬБА СКОПИРОВАТЬ СИМВОЛЫ ЗАРАНЕЕ,&#10;В ПРОЦЕССЕ РЕШЕНИЯ ЭТОГО СДЕЛАТЬ БУДЕТ НЕВОЗМОЖНО" />
+      <Button fx:id="backBtn1" onAction="#back" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" style="-fx-background-color: #c51d34;" text="Назад" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Button>
    </children>
 </Pane>

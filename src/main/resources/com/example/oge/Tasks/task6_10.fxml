@@ -14,14 +14,14 @@
          </font>
       </Button>
       <ImageView fx:id="zad_6_IV" fitHeight="89.0" fitWidth="360.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="zad_7_IV" fitHeight="130.0" fitWidth="447.0" layoutX="29.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="zad_8_IV" fitHeight="89.0" fitWidth="360.0" layoutX="29.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="zad_7_IV" fitHeight="130.0" fitWidth="433.0" layoutX="6.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="zad_8_IV" fitHeight="89.0" fitWidth="360.0" layoutX="6.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fx:id="zad_9_IV" fitHeight="89.0" fitWidth="360.0" layoutX="509.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="zad_10_IV" fitHeight="89.0" fitWidth="360.0" layoutX="526.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true" />
-      <TextField layoutX="60.0" layoutY="118.0" />
-      <TextField layoutX="60.0" layoutY="337.0" />
-      <TextField layoutX="60.0" layoutY="536.0" />
+      <ImageView fx:id="zad_10_IV" fitHeight="159.0" fitWidth="414.0" layoutX="472.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField layoutX="37.0" layoutY="118.0" />
+      <TextField layoutX="37.0" layoutY="337.0" />
+      <TextField layoutX="37.0" layoutY="536.0" />
       <TextField layoutX="540.0" layoutY="131.0" />
-      <TextField layoutX="540.0" layoutY="337.0" />
+      <TextField layoutX="540.0" layoutY="401.0" />
    </children>
 </AnchorPane>

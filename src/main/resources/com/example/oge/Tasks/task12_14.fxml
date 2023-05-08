@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #f50029;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oge.Tasks.Task12_14">
    <children>
       <Button fx:id="nextBtn" layoutX="772.0" layoutY="548.0" mnemonicParsing="false" style="-fx-background-color: #c51d34;" text="Дальше" textFill="WHITE">
@@ -14,11 +13,11 @@
             <Font name="Arial" size="19.0" />
          </font>
       </Button>
-      <ImageView fx:id="zad_12_IV" fitHeight="130.0" fitWidth="525.0" layoutX="39.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="zad_14_IV" fitHeight="130.0" fitWidth="525.0" layoutX="39.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="zad_13_IV" fitHeight="130.0" fitWidth="525.0" layoutX="39.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true" />
-      <TextField layoutX="65.0" layoutY="178.0" />
-      <TextField layoutX="65.0" layoutY="373.0" />
-      <TextField layoutX="65.0" layoutY="548.0" />
+      <ImageView fx:id="zad_12_IV" fitHeight="184.0" fitWidth="554.0" layoutX="39.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="zad_14_IV" fitHeight="130.0" fitWidth="525.0" layoutX="39.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="zad_13_IV" fitHeight="130.0" fitWidth="525.0" layoutX="39.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField layoutX="65.0" layoutY="219.0" />
+      <TextField layoutX="65.0" layoutY="403.0" />
+      <TextField layoutX="65.0" layoutY="567.0" />
    </children>
 </AnchorPane>
