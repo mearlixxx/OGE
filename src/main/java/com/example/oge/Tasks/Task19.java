@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
@@ -22,6 +23,10 @@ public class Task19 extends VariantMaker implements Initializable {
 
     @FXML
     Button nextBtn;
+
+    @FXML
+    TextField zad_19_TF;
+
 
 
     @Override

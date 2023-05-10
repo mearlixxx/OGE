@@ -21,6 +21,8 @@ import java.util.concurrent.ThreadLocalRandom;
 public class VariantMaker {
     public static int varNum;
 
+    public static int SCORES;
+
     public static String Zad_1 = "zad_1_";
     public static String Zad_2 = "zad_2_";
     public static String Zad_3 = "zad_3_";

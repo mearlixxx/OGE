@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
@@ -19,8 +20,12 @@ import java.util.ResourceBundle;
 public class Task15_18 extends VariantMaker implements Initializable {
     @FXML
     ImageView zad_15_IV, zad_16_IV, zad_17_IV, zad_18_IV;
+
     @FXML
     Button nextBtn;
+
+    @FXML
+    TextField zad_15_TF, zad_16_TF, zad_17_TF, zad_18_TF;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
@@ -21,8 +22,12 @@ import java.util.ResourceBundle;
 public class Task1_4 extends VariantMaker implements Initializable {
     @FXML
     public ImageView usl_IV, zad_1_IV, zad_2_IV, zad_3_IV, zad_4_IV;
+
     @FXML
     Button nextBtn;
+
+    @FXML
+    TextField zad_1_TF, zad_2_TF, zad_3_TF, zad_4_TF;
 
 
     @Override
