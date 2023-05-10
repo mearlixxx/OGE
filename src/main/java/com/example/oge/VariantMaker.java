@@ -46,19 +46,33 @@ public class VariantMaker {
     public static String Zad_25 =  "zad_25_";
     public static String Usl =  "usl_";
 
-    public static String[][][] answers = new String[4][22][22];
-
+    public static String[][] answers_var_1 = new String[][] {
+            {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "23", "25"},
+            {"62471", "240", "5", "6,24", "26,1", "-1,3", "4", "0,28", "-6,75", "0,096", "123", "4,2", "1", "20", "27", "133", "42", "0,8", "1", "8", "100", "49", "3:5"}};
+    public static String[][] answers_var_2 = new String[][] {
+            {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "23", "25"},
+            {"34125", "25", "132", "78", "127", "-2", "1", "8", "18", "4", "123", "0,003", "2", "68400", "68", "59", "10", "0,6", "23", "±√5;±2;0", "20", "9", "25"}};;
+    public static String[][] answers_var_3 = new String[][] {
+            {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "23", "25"},
+            {"10", "3,4", "19", "42", "1,5", "1,6", "2", "70", "-7", "0,2", "123", "7", "2", "17", "106", "54", "12", "5", "23", "(-∞;-4,5]", "181", "10", "250"}};;
+    public static String[][] answers_var_4 = new String[][] {
+            {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "23", "25"},
+            {"3412", "60", "40,82", "72", "57920", "270", "3", "9", "3,5", "0,6", "231", "0,6", "2", "44", "120", "26", "4", "22,5", "12", "(6;1),(1;6)", "16", "14,5", "672"}};;
+    public static String[][] answers_var_5 = new String[][] {
+            {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "23", "25"},
+            {"92310", "475", "10", "8", "300", "24,52", "3", "-3", "8", "0,625", "321", "73,4", "4", "5", "66", "61", "800", "12", "23", "-2", "160", "14,4", "17"}};
+    public static String[][] answers;
 
     @FXML
     Button var1Btn, var2Btn, var3Btn, var4Btn, var5Btn;
 
     public void  makeVarNum(ActionEvent ae) throws IOException {
 
-        if (ae.getSource() == var1Btn) {varNum = 1;}
-        if (ae.getSource() == var2Btn) {varNum = 2;}
-        if (ae.getSource() == var3Btn) {varNum = 3;}
-        if (ae.getSource() == var4Btn) {varNum = 4;}
-        if (ae.getSource() == var5Btn) {varNum = 5;}
+        if (ae.getSource() == var1Btn) {varNum = 1; answers = answers_var_1;}
+        if (ae.getSource() == var2Btn) {varNum = 2; answers = answers_var_2;}
+        if (ae.getSource() == var3Btn) {varNum = 3; answers = answers_var_3;}
+        if (ae.getSource() == var4Btn) {varNum = 4; answers = answers_var_4;}
+        if (ae.getSource() == var5Btn) {varNum = 5; answers = answers_var_5;}
 
         Zad_1 += varNum + ".png";
         Zad_2 += varNum + ".png";
