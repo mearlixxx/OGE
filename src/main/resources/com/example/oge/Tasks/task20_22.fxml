@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #f50029;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oge.Tasks.Task20_22">
    <children>
       <ImageView fx:id="zad_20_IV" fitHeight="442.0" fitWidth="430.0" layoutX="8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
@@ -16,7 +15,7 @@
             <Font name="Arial" size="19.0" />
          </font>
       </Button>
-      <TextField layoutX="597.0" layoutY="463.0" />
-      <TextField layoutX="149.0" layoutY="463.0" />
+      <TextField fx:id="zad_21_TF" layoutX="597.0" layoutY="463.0" />
+      <TextField fx:id="zad_20_TF" layoutX="149.0" layoutY="463.0" />
    </children>
 </AnchorPane>

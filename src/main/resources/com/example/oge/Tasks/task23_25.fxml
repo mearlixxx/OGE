@@ -15,7 +15,7 @@
             <Font name="Arial" size="19.0" />
          </font>
       </Button>
-      <TextField layoutX="597.0" layoutY="463.0" />
-      <TextField layoutX="149.0" layoutY="463.0" />
+      <TextField fx:id="zad_25_TF" layoutX="597.0" layoutY="463.0" />
+      <TextField fx:id="zad_23_TF" layoutX="149.0" layoutY="463.0" />
    </children>
 </AnchorPane>

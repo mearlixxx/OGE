@@ -50,6 +50,20 @@ public class Task1_4 extends VariantMaker implements Initializable {
         usl_IV.setImage(usl_img);
 
         nextBtn.setOnAction((event -> {
+
+            if (zad_1_TF.getText().trim().equals(answers[1][0])){
+                SCORES++;
+            }
+            if (zad_2_TF.getText().trim().equals(answers[1][1])){
+                SCORES++;
+            }
+            if (zad_3_TF.getText().trim().equals(answers[1][2])){
+                SCORES++;
+            }
+            if (zad_4_TF.getText().trim().equals(answers[1][3])){
+                SCORES++;
+            }
+
             Stage stage = (Stage) nextBtn.getScene().getWindow();
             stage.setResizable(false);
             Parent root = null;

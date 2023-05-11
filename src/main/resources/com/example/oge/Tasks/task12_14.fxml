@@ -16,8 +16,8 @@
       <ImageView fx:id="zad_12_IV" fitHeight="184.0" fitWidth="554.0" layoutX="39.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fx:id="zad_14_IV" fitHeight="130.0" fitWidth="525.0" layoutX="39.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fx:id="zad_13_IV" fitHeight="130.0" fitWidth="525.0" layoutX="39.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true" />
-      <TextField layoutX="65.0" layoutY="219.0" />
-      <TextField layoutX="65.0" layoutY="403.0" />
-      <TextField layoutX="65.0" layoutY="567.0" />
+      <TextField fx:id="zad_12_TF" layoutX="65.0" layoutY="219.0" />
+      <TextField fx:id="zad_13_TF" layoutX="65.0" layoutY="403.0" />
+      <TextField fx:id="zad_14_TF" layoutX="65.0" layoutY="567.0" />
    </children>
 </AnchorPane>

@@ -44,6 +44,20 @@ public class Task15_18 extends VariantMaker implements Initializable {
 
 
         nextBtn.setOnAction((event -> {
+
+            if (zad_15_TF.getText().trim().equals(answers[1][14])){
+                SCORES++;
+            }
+            if (zad_16_TF.getText().trim().equals(answers[1][15])){
+                SCORES++;
+            }
+            if (zad_17_TF.getText().trim().equals(answers[1][16])){
+                SCORES++;
+            }
+            if (zad_18_TF.getText().trim().equals(answers[1][17])){
+                SCORES++;
+            }
+
             Stage stage = (Stage) nextBtn.getScene().getWindow();
             stage.setResizable(false);
             Parent root = null;

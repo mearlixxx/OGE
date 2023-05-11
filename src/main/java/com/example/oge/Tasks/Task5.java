@@ -33,7 +33,11 @@ public class Task5 extends VariantMaker implements Initializable {
         Image zad_5_img = new Image(getClass().getResourceAsStream("/com/example/oge/Excersises/Ex5/" + Zad_5));
         zad_5_IV.setImage(zad_5_img);
 
+
         nextBtn.setOnAction(event -> {
+            if (zad_5_TF.getText().trim().equals(answers[1][4])){
+            SCORES++;
+            }
             Stage stage = (Stage) nextBtn.getScene().getWindow();
             stage.setResizable(false);
             Parent root = null;

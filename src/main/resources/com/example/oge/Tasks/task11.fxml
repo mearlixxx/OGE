@@ -15,6 +15,6 @@
          </font>
       </Button>
       <ImageView fx:id="zad_11_IV" fitHeight="356.0" fitWidth="509.0" layoutX="36.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" />
-      <TextField layoutX="67.0" layoutY="449.0" />
+      <TextField layoutX="67.0" layoutY="449.0" fx:id="zad_11_TF" />
    </children>
 </AnchorPane>

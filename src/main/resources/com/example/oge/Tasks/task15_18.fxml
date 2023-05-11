@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #f50029;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oge.Tasks.Task15_18">
    <children>
       <Button fx:id="nextBtn" layoutX="772.0" layoutY="548.0" mnemonicParsing="false" style="-fx-background-color: #c51d34;" text="Дальше" textFill="WHITE">
@@ -18,9 +17,9 @@
       <ImageView fx:id="zad_17_IV" fitHeight="104.0" fitWidth="379.0" layoutX="450.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fx:id="zad_18_IV" fitHeight="104.0" fitWidth="379.0" layoutX="450.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fx:id="zad_16_IV" fitHeight="104.0" fitWidth="379.0" layoutX="14.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true" />
-      <TextField layoutX="14.0" layoutY="168.0" />
-      <TextField layoutX="14.0" layoutY="368.0" />
-      <TextField layoutX="450.0" layoutY="168.0" />
-      <TextField layoutX="450.0" layoutY="368.0" />
+      <TextField fx:id="zad_15_TF" layoutX="14.0" layoutY="168.0" />
+      <TextField fx:id="zad_16_TF" layoutX="14.0" layoutY="368.0" />
+      <TextField fx:id="zad_17_TF" layoutX="450.0" layoutY="168.0" />
+      <TextField fx:id="zad_18_TF" layoutX="450.0" layoutY="368.0" />
    </children>
 </AnchorPane>

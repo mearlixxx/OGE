@@ -35,6 +35,11 @@ public class Task19 extends VariantMaker implements Initializable {
         zad_19_IV.setImage(zad_19_img);
 
         nextBtn.setOnAction(event -> {
+
+            if (zad_19_TF.getText().trim().equals(answers[1][18])){
+                SCORES++;
+            }
+
             Stage stage = (Stage) nextBtn.getScene().getWindow();
             stage.setResizable(false);
             Parent root = null;

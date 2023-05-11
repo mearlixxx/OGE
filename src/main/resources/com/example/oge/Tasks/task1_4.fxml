@@ -9,10 +9,10 @@
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #f50029;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oge.Tasks.Task1_4">
    <children>
       <ImageView fx:id="usl_IV" fitHeight="600.0" fitWidth="476.0" pickOnBounds="true" preserveRatio="true" />
-      <TextField layoutX="504.0" layoutY="490.0" prefHeight="15.0" prefWidth="149.0" />
-      <TextField layoutX="504.0" layoutY="369.0" />
-      <TextField layoutX="504.0" layoutY="247.0" />
-      <TextField layoutX="504.0" layoutY="130.0" />
+      <TextField fx:id="zad_4_TF" layoutX="504.0" layoutY="490.0" prefHeight="15.0" prefWidth="149.0" />
+      <TextField fx:id="zad_3_TF" layoutX="504.0" layoutY="369.0" />
+      <TextField fx:id="zad_2_TF" layoutX="504.0" layoutY="247.0" />
+      <TextField fx:id="zad_1_TF" layoutX="504.0" layoutY="130.0" />
       <ImageView fx:id="zad_1_IV" fitHeight="106.0" fitWidth="380.0" layoutX="500.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fx:id="zad_4_IV" fitHeight="77.0" fitWidth="380.0" layoutX="504.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fx:id="zad_3_IV" fitHeight="77.0" fitWidth="380.0" layoutX="500.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true" />
