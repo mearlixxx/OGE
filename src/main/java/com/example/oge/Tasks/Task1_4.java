@@ -50,19 +50,27 @@ public class Task1_4 extends VariantMaker implements Initializable {
         usl_IV.setImage(usl_img);
 
         nextBtn.setOnAction((event -> {
+            switch (MODE){
+                case "RESHVAR":
 
-            if (zad_1_TF.getText().trim().equals(answers[1][0])){
-                SCORES++;
+                    if (zad_1_TF.getText().trim().equals(answers[1][0])){SCORES++;}
+                    if (zad_2_TF.getText().trim().equals(answers[1][1])){SCORES++;}
+                    if (zad_3_TF.getText().trim().equals(answers[1][2])){SCORES++;}
+                    if (zad_4_TF.getText().trim().equals(answers[1][3])){SCORES++;}
+
+                    break;
+
+                case "TRAINING":
+
+                    if (zad_1_TF.getText().trim().equals(answers[1][0])){CORRECTORWRONG_1 = true;}
+                    if (zad_2_TF.getText().trim().equals(answers[1][1])){CORRECTORWRONG_2 = true;}
+                    if (zad_3_TF.getText().trim().equals(answers[1][2])){CORRECTORWRONG_3 = true;}
+                    if (zad_4_TF.getText().trim().equals(answers[1][3])){CORRECTORWRONG_4 = true;}
+
+                    break;
+
             }
-            if (zad_2_TF.getText().trim().equals(answers[1][1])){
-                SCORES++;
-            }
-            if (zad_3_TF.getText().trim().equals(answers[1][2])){
-                SCORES++;
-            }
-            if (zad_4_TF.getText().trim().equals(answers[1][3])){
-                SCORES++;
-            }
+
 
             Stage stage = (Stage) nextBtn.getScene().getWindow();
             stage.setResizable(false);

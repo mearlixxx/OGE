@@ -36,19 +36,45 @@ public class Task19 extends VariantMaker implements Initializable {
 
         nextBtn.setOnAction(event -> {
 
-            if (zad_19_TF.getText().trim().equals(answers[1][18])){
-                SCORES++;
+            switch (MODE){
+                case "RESHVAR":
+
+                    if (zad_19_TF.getText().trim().equals(answers[1][18])){SCORES++;}
+
+                    Stage stage = (Stage) nextBtn.getScene().getWindow();
+                    stage.setResizable(false);
+                    Parent root = null;
+                    try {
+                        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/oge/Tasks/task20_22.fxml")));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    stage.setScene(new Scene(root, 900, 600));
+
+                    break;
+
+                case "TRAINING":
+
+                    if (zad_19_TF.getText().trim().equals(answers[1][18])){CORRECTORWRONG_1 = true;}
+
+                    Stage stage1 = (Stage) nextBtn.getScene().getWindow();
+                    stage1.setResizable(false);
+                    Parent root1 = null;
+                    try {
+                        root1 = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/oge/Tasks/task6_10.fxml")));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    stage1.setScene(new Scene(root1, 900, 600));
+
+                    break;
+
             }
 
-            Stage stage = (Stage) nextBtn.getScene().getWindow();
-            stage.setResizable(false);
-            Parent root = null;
-            try {
-                root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/oge/Tasks/task20_22.fxml")));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            stage.setScene(new Scene(root, 900, 600));
+
+
+
+
         });
     }
 }

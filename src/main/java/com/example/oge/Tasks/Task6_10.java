@@ -47,31 +47,73 @@ public class Task6_10 extends VariantMaker implements Initializable {
 
         nextBtn.setOnAction(event -> {
 
-            if (zad_6_TF.getText().trim().equals(answers[1][5])){
-                SCORES++;
-            }
-            if (zad_7_TF.getText().trim().equals(answers[1][6])){
-                SCORES++;
-            }
-            if (zad_8_TF.getText().trim().equals(answers[1][7])){
-                SCORES++;
-            }
-            if (zad_9_TF.getText().trim().equals(answers[1][8])){
-                SCORES++;
-            }
-            if (zad_10_TF.getText().trim().equals(answers[1][9])){
-                SCORES++;
+            switch (MODE) {
+
+                case "RESHVAR":
+
+                    if (zad_6_TF.getText().trim().equals(answers[1][5])) {
+                        SCORES++;
+                    }
+                    if (zad_7_TF.getText().trim().equals(answers[1][6])) {
+                        SCORES++;
+                    }
+                    if (zad_8_TF.getText().trim().equals(answers[1][7])) {
+                        SCORES++;
+                    }
+                    if (zad_9_TF.getText().trim().equals(answers[1][8])) {
+                        SCORES++;
+                    }
+                    if (zad_10_TF.getText().trim().equals(answers[1][9])) {
+                        SCORES++;
+                    }
+
+                    Stage stage = (Stage) nextBtn.getScene().getWindow();
+                    stage.setResizable(false);
+                    Parent root = null;
+                    try {
+                        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/oge/Tasks/task11.fxml")));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    stage.setScene(new Scene(root, 900, 600));
+
+
+                    break;
+
+
+                case "TRAINING":
+
+                    if (zad_6_TF.getText().trim().equals(answers[1][5])) {
+                        CORRECTORWRONG_1 = true;
+                    }
+                    if (zad_7_TF.getText().trim().equals(answers[1][6])) {
+                        CORRECTORWRONG_2 = true;
+                    }
+                    if (zad_8_TF.getText().trim().equals(answers[1][7])) {
+                        CORRECTORWRONG_3 = true;
+                    }
+                    if (zad_9_TF.getText().trim().equals(answers[1][8])) {
+                        CORRECTORWRONG_4 = true;
+                    }
+                    if (zad_10_TF.getText().trim().equals(answers[1][9])) {
+                        CORRECTORWRONG_5 = true;
+                    }
+
+                    Stage stage1 = (Stage) nextBtn.getScene().getWindow();
+                    stage1.setResizable(false);
+                    Parent root1 = null;
+                    try {
+                        root1 = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/oge/Tasks/task6_10.fxml")));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    stage1.setScene(new Scene(root1, 900, 600));
+
+                    break;
+
             }
 
-            Stage stage = (Stage) nextBtn.getScene().getWindow();
-            stage.setResizable(false);
-            Parent root = null;
-            try {
-                root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/oge/Tasks/task11.fxml")));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            stage.setScene(new Scene(root, 900, 600));
+
         });
     }
 }

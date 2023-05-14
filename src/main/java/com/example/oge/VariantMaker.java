@@ -23,6 +23,18 @@ public class VariantMaker {
 
     public static int SCORES;
 
+    public static String MODE = "";
+
+    public static boolean CORRECTORWRONG_1 = false;
+
+    public static boolean CORRECTORWRONG_2 = false;
+
+    public static boolean CORRECTORWRONG_3 = false;
+
+    public static boolean CORRECTORWRONG_4 = false;
+
+    public static boolean CORRECTORWRONG_5 = false;
+
     public static String Zad_1 = "zad_1_";
     public static String Zad_2 = "zad_2_";
     public static String Zad_3 = "zad_3_";
@@ -72,7 +84,7 @@ public class VariantMaker {
 
         if (ae.getSource() == var1Btn) {varNum = 1; answers = answers_var_1;}
         if (ae.getSource() == var2Btn) {varNum = 2; answers = answers_var_2;}
-        if (ae.getSource() == var3Btn) {varNum = 3; answers = answers_var_3;}
+        if (ae.getSource() == var3Btn) {varNum = 3; answers = answers_var_3;}   
         if (ae.getSource() == var4Btn) {varNum = 4; answers = answers_var_4;}
         if (ae.getSource() == var5Btn) {varNum = 5; answers = answers_var_5;}
 
@@ -100,6 +112,8 @@ public class VariantMaker {
         Zad_23 += varNum + ".png";
         Zad_25 += varNum + ".png";
         Usl += varNum + ".png";
+
+        MODE = "RESHVAR";
 
         Stage stage = (Stage) var1Btn.getScene().getWindow();
         stage.setResizable(false);

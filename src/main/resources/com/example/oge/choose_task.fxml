@@ -5,51 +5,51 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFDEAD;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oge.MainMenu">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f50029;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oge.ChooseTask">
    <children>
-      <Label layoutX="171.0" layoutY="14.0" text="Выбор задания">
+      <Label layoutX="139.0" layoutY="14.0" text="Выбор задания" textFill="WHITE">
          <font>
-            <Font name="Mistral" size="45.0" />
+            <Font name="Arial" size="45.0" />
          </font>
       </Label>
-      <Button fx:id="reshVarBtn" layoutX="14.0" layoutY="93.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="67.0" style="-fx-background-color: #00b300;" text="1-5">
+      <Button fx:id="zad_1_5_btn" layoutX="14.0" layoutY="93.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="67.0" style="-fx-background-color: #c51d34;" text="1-5" textFill="WHITE">
          <font>
-            <Font name="Mistral" size="27.0" />
+            <Font name="Arial Black" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="trainingBtn" layoutX="91.0" layoutY="93.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="80.0" style="-fx-background-color: #00b300;" text="6-10">
+      <Button fx:id="zad_6_10_btn" layoutX="91.0" layoutY="93.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="80.0" style="-fx-background-color: #c51d34;" text="6-10" textFill="WHITE">
          <font>
-            <Font name="Mistral" size="27.0" />
+            <Font name="Arial Black" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="formulasBtn" layoutX="17.0" layoutY="171.0" mnemonicParsing="false" onAction="#setFormulasBtn" prefHeight="52.0" prefWidth="61.0" style="-fx-background-color: #00b300;" text="11">
+      <Button fx:id="zad_11_btn" layoutX="17.0" layoutY="171.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="61.0" style="-fx-background-color: #c51d34;" text="11" textFill="WHITE">
          <font>
-            <Font name="Mistral" size="27.0" />
+            <Font name="Arial Black" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="formulasBtn1" layoutX="87.0" layoutY="171.0" mnemonicParsing="false" onAction="#setFormulasBtn" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #00b300;" text="12-14">
+      <Button fx:id="zad_12_14_btn" layoutX="87.0" layoutY="171.0" mnemonicParsing="false"  prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #c51d34;" text="12-14" textFill="WHITE">
          <font>
-            <Font name="Mistral" size="27.0" />
+            <Font name="Arial Black" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="formulasBtn11" layoutX="17.0" layoutY="240.0" mnemonicParsing="false" onAction="#setFormulasBtn" prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #00b300;" text="15-18">
+      <Button fx:id="zad_15_18_btn" layoutX="17.0" layoutY="240.0" mnemonicParsing="false"  prefHeight="52.0" prefWidth="88.0" style="-fx-background-color: #c51d34;" text="15-18" textFill="WHITE">
          <font>
-            <Font name="Mistral" size="27.0" />
+            <Font name="Arial Black" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="formulasBtn2" layoutX="115.0" layoutY="240.0" mnemonicParsing="false" onAction="#setFormulasBtn" prefHeight="52.0" prefWidth="61.0" style="-fx-background-color: #00b300;" text="19">
+      <Button fx:id="zad_19_btn" layoutX="115.0" layoutY="240.0" mnemonicParsing="false"  prefHeight="52.0" prefWidth="61.0" style="-fx-background-color: #c51d34;" text="19" textFill="WHITE">
          <font>
-            <Font name="Mistral" size="27.0" />
+            <Font name="Arial Black" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="formulasBtn111" layoutX="17.0" layoutY="309.0" mnemonicParsing="false" onAction="#setFormulasBtn" prefHeight="52.0" prefWidth="94.0" style="-fx-background-color: #00b300;" text="20-22">
+      <Button fx:id="zad_20_21_btn" layoutX="17.0" layoutY="309.0" mnemonicParsing="false"  prefHeight="52.0" prefWidth="94.0" style="-fx-background-color: #c51d34;" text="20-21" textFill="WHITE">
          <font>
-            <Font name="Mistral" size="27.0" />
+            <Font name="Arial Black" size="20.0" />
          </font>
       </Button>
-      <Button fx:id="formulasBtn1111" layoutX="124.0" layoutY="309.0" mnemonicParsing="false" onAction="#setFormulasBtn" prefHeight="52.0" prefWidth="94.0" style="-fx-background-color: #00b300;" text="23-25">
+      <Button fx:id="zad_23_25_btn" layoutX="124.0" layoutY="309.0" mnemonicParsing="false"  prefHeight="52.0" prefWidth="94.0" style="-fx-background-color: #c51d34;" text="23-25" textFill="WHITE">
          <font>
-            <Font name="Mistral" size="27.0" />
+            <Font name="Arial Black" size="20.0" />
          </font>
       </Button>
    </children>
