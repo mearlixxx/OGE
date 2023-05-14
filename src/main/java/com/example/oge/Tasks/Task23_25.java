@@ -47,12 +47,32 @@ public class Task23_25 extends VariantMaker implements Initializable {
                     if (zad_23_TF.getText().trim().equals(answers[1][21])){SCORES++;}
                     if (zad_25_TF.getText().trim().equals(answers[1][22])){SCORES++;}
 
+                    Stage stage = (Stage) nextBtn.getScene().getWindow();
+                    stage.setResizable(false);
+                    Parent root = null;
+                    try {
+                        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/oge/reshvar_results.fxml")));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    stage.setScene(new Scene(root, 600, 400));
+
                     break;
 
                 case  "TRAINING":
 
                     if (zad_23_TF.getText().trim().equals(answers[1][21])){CORRECTORWRONG_1 = true;}
                     if (zad_25_TF.getText().trim().equals(answers[1][22])){CORRECTORWRONG_2 = true;}
+
+                    Stage stage1 = (Stage) nextBtn.getScene().getWindow();
+                    stage1.setResizable(false);
+                    Parent root1 = null;
+                    try {
+                        root1 = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/oge/training_results.fxml")));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    stage1.setScene(new Scene(root1, 600, 400));
 
                     break;
 

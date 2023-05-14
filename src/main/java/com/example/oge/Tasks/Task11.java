@@ -59,7 +59,7 @@ public class Task11 extends VariantMaker implements Initializable {
                     stage1.setResizable(false);
                     Parent root1 = null;
                     try {
-                        root1 = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/oge/Tasks/task6_10.fxml")));
+                        root1 = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/oge/training_results.fxml")));
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -68,18 +68,6 @@ public class Task11 extends VariantMaker implements Initializable {
                     break;
 
             }
-
-
-
-            Stage stage = (Stage) nextBtn.getScene().getWindow();
-            stage.setResizable(false);
-            Parent root = null;
-            try {
-                root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/example/oge/Tasks/task12_14.fxml")));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            stage.setScene(new Scene(root, 900, 600));
         });
     }
 }
