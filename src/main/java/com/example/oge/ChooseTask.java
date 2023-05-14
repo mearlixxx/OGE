@@ -21,43 +21,44 @@ public class ChooseTask extends VariantMaker implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        Random random = new Random();
+        varNum = random.nextInt(5) + 1;
+
+        if (varNum == 1) {answers = answers_var_1;}
+        if (varNum == 2) {answers = answers_var_2;}
+        if (varNum == 3) {answers = answers_var_3;}
+        if (varNum == 4) {answers = answers_var_4;}
+        if (varNum == 5) {answers = answers_var_5;}
+
+        Zad_1 += varNum + ".png";
+        Zad_2 += varNum + ".png";
+        Zad_3 += varNum + ".png";
+        Zad_4 += varNum + ".png";
+        Zad_5 += varNum + ".png";
+        Zad_6 += varNum + ".png";
+        Zad_7 += varNum + ".png";
+        Zad_8 += varNum + ".png";
+        Zad_9 += varNum + ".png";
+        Zad_10 += varNum + ".png";
+        Zad_11 += varNum + ".png";
+        Zad_12 += varNum + ".png";
+        Zad_13 += varNum + ".png";
+        Zad_14 += varNum + ".png";
+        Zad_15 += varNum + ".png";
+        Zad_16 += varNum + ".png";
+        Zad_17 += varNum + ".png";
+        Zad_18 += varNum + ".png";
+        Zad_19 += varNum + ".png";
+        Zad_20 += varNum + ".png";
+        Zad_21 += varNum + ".png";
+        Zad_23 += varNum + ".png";
+        Zad_25 += varNum + ".png";
+        Usl += varNum + ".png";
+
+        MODE = "TRAINING";
         zad_1_5_btn.setOnAction(actionEvent -> {
 
-            Random random = new Random();
-            varNum = random.nextInt(5) + 1;
 
-            if (varNum == 1) {answers = answers_var_1;}
-            if (varNum == 2) {answers = answers_var_2;}
-            if (varNum == 3) {answers = answers_var_3;}
-            if (varNum == 4) {answers = answers_var_4;}
-            if (varNum == 5) {answers = answers_var_5;}
-
-            Zad_1 += varNum + ".png";
-            Zad_2 += varNum + ".png";
-            Zad_3 += varNum + ".png";
-            Zad_4 += varNum + ".png";
-            Zad_5 += varNum + ".png";
-            Zad_6 += varNum + ".png";
-            Zad_7 += varNum + ".png";
-            Zad_8 += varNum + ".png";
-            Zad_9 += varNum + ".png";
-            Zad_10 += varNum + ".png";
-            Zad_11 += varNum + ".png";
-            Zad_12 += varNum + ".png";
-            Zad_13 += varNum + ".png";
-            Zad_14 += varNum + ".png";
-            Zad_15 += varNum + ".png";
-            Zad_16 += varNum + ".png";
-            Zad_17 += varNum + ".png";
-            Zad_18 += varNum + ".png";
-            Zad_19 += varNum + ".png";
-            Zad_20 += varNum + ".png";
-            Zad_21 += varNum + ".png";
-            Zad_23 += varNum + ".png";
-            Zad_25 += varNum + ".png";
-            Usl += varNum + ".png";
-
-            MODE = "TRAINING";
 
             Stage stage = (Stage) zad_1_5_btn.getScene().getWindow();
             stage.setResizable(false);
